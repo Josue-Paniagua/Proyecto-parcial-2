@@ -1,0 +1,18 @@
+using System;
+
+namespace MinecraftManager.Models
+{
+    public class Bloque
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Tipo { get; set; }
+        public string Rareza { get; set; }
+        public string ImagenRecurso { get; set; } // Nombre del recurso de la imagen
+
+        public override string ToString()
+        {
+            return $"ID: {Id}, Nombre: {Nombre}, Tipo: {Tipo}, Rareza: {Rareza}";
+        }
+    }
+}
